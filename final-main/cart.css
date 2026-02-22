@@ -1,0 +1,10 @@
+body{
+    display: flexbox;
+    background-color: coral;
+
+}
+button{
+    border-radius: 25%;
+    border-color: chocolate;
+
+}

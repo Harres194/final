@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Кошик</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<h1>Ваш кошик</h1>
+
+<a href="index.html">← Назад</a>
+
+<div class="cart-items"></div>
+
+<h2 class="total"></h2>
+
+<button onclick="openCheckout()">Оформити замовлення</button>
+
+<div class="checkout" style="display:none; margin-top:20px;">
+    <h3>Оформлення</h3>
+    <input placeholder="Ім'я"><br><br>
+    <input placeholder="Телефон"><br><br>
+    <button onclick="confirmOrder()">Підтвердити</button>
+</div>
+
+<script src="js/cart-page.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
