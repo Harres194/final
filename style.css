@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    body{
+    background-color:lightsalmon;
+    font-family:Arial;
+    }
+    
+    header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    background:#f4c27f;
+    }
+    
+    .header_img{
+    height:150px;
+    }
+    
+    .nav-bar{
+    list-style:none;
+    display:flex;
+    gap:40px;
+    }
+    
+    .nav-link{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:8px 15px;
+    border-radius:5px;
+    transition:0.3s;
+    }
+    
+    .nav-link:hover{
+    background:rgba(255,255,255,0.3);
+    }
+    
+    .cart img{
+    height:80px;
+    }
+    
+    .cart-count{
+    background:red;
+    color:white;
+    padding:4px 8px;
+    border-radius:50%;
+    font-size:12px;
+    }
+    
+    .baner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:150px;
+    padding:60px;
+    flex-wrap:wrap;
+    }
+    
+    .text{
+    max-width:450px;
+    }
+    
+    .text h1{
+    font-size:3em;
+    margin-bottom:20px;
+    }
+    
+    .text h2{
+    font-size:2em;
+    margin-bottom:15px;
+    }
+    
+    .controls button{
+    margin-right:10px;
+    }
+    
+    button{
+    padding:10px 20px;
+    border:none;
+    background:orangered;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+    }
+    
+    button:hover{
+    background:red;
+    transform:scale(1.05);
+    }
+    
+    .secondary{
+    background:#444;
+    }
+    
+    .image img{
+    width:500px;
+    }
+    
+    .advantages{
+    padding:60px;
+    text-align:center;
+    }
+    
+    .adv-grid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+    flex-wrap:wrap;
+    }
+    
+    .adv{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:220px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .container{
+    text-align:center;
+    padding:50px;
+    }
+    
+    .slider{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:20px;
+        width:100%;
+        max-width:1200px;
+        margin:auto;
+        }
+        
+        .slides{
+        width:100%;
+        overflow:hidden;
+        }
+        
+        .slide{
+        display:none;
+        padding:20px;
+        border-radius:10px;
+        background:white;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        text-align:center;
+        }
+        
+        .slide.active{
+        display:block;
+        }
+        
+        .slide-img{
+        width:100%;
+        max-height:400px;
+        object-fit:cover;
+        border-radius:8px;
+        }
+    
+    .reviews{
+    padding:60px;
+    text-align:center;
+    }
+    
+    .review-grid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    }
+    
+    .review{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:220px;
+    }
+    
+    .pro-nas{
+    padding:50px;
+    text-align:center;
+    }
+    
+    footer{
+    background:orangered;
+    color:white;
+    padding:40px;
+    }
+    
+    .footer-grid{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    }
+
+    .catalog{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:30px;
+        padding:40px 0;
+    }
+    
+    .product{
+        width:220px;
+        background:white;
+        border-radius:12px;
+        overflow:hidden;
+        box-shadow:0 5px 20px rgba(0,0,0,0.15);
+        transition:0.3s;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    
+    .product:hover{
+        transform:translateY(-8px);
+        box-shadow:0 10px 30px rgba(0,0,0,0.25);
+    }
+    
+    .product-image{
+        width:100%;
+        height:160px;
+        overflow:hidden;
+    }
+    
+    .product-image img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        transition:0.3s;
+    }
+    
+    .product:hover img{
+        transform:scale(1.1);
+    }
+    
+    .product-info{
+        padding:15px;
+    }
+    
+    .product-title{
+        font-size:18px;
+        margin-bottom:10px;
+    }
+    
+    .product-price{
+        color:orangered;
+        font-size:20px;
+        font-weight:bold;
+        margin-bottom:12px;
+    }
+    
+    .add-cart-btn{
+        background:orangered;
+        border:none;
+        padding:10px;
+        color:white;
+        font-weight:bold;
+        border-radius:6px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+    
+    .add-cart-btn:hover{
+        background:red;
+        transform:scale(1.05);
+    }

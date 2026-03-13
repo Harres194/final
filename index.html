@@ -1,65 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Булочна</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="завантаження.png" class="header_img">
+
+<header>
+
+<div class="logo">
+<img src="завантаження.png" class="header_img">
+</div>
+
+<div class="nav-container">
+<nav>
+<ul class="nav-bar">
+<li class="nav-item"><a href="#" class="nav-link">Випічка</a></li>
+<li class="nav-item"><a href="#" class="nav-link">Доставка</a></li>
+<li class="nav-item"><a href="#" class="nav-link">Оплата</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="cart">
+<a href="cart.html">
+<img src="cart-removebg-preview.png">
+<span class="cart-count">0</span>
+</a>
+</div>
+
+</header>
+
+
+<main>
+
+<section class="baner">
+
+<div class="text">
+
+<h1>Свіжа випічка щодня</h1>
+<h2>Тільки з печі</h2>
+
+<p>
+Ми готуємо круасани, булочки та хліб щодня 
+використовуючи тільки свіжі інгредієнти.
+</p>
+
+<div class="controls">
+<button>Замовити</button>
+<button class="secondary">Меню</button>
+</div>
+
+</div>
+
+<div class="image">
+<img src="hachapuri.png">
+</div>
+
+</section>
+
+
+<section class="advantages">
+
+<h2>Чому обирають нас</h2>
+
+<div class="adv-grid">
+
+<div class="adv">
+<h3>🥐 Свіжа випічка</h3>
+<p>Ми випікаємо кожного дня</p>
+</div>
+
+<div class="adv">
+<h3>🚚 Швидка доставка</h3>
+<p>Доставка по місту</p>
+</div>
+
+<div class="adv">
+<h3>⭐ Якість</h3>
+<p>Тільки натуральні інгредієнти</p>
+</div>
+
+</div>
+
+</section>
+
+
+<div class="container">
+
+<h2>Наші товари</h2>
+
+<div class="catalog">
+
+    <!-- Товар 1 -->
+    <div class="product">
+        <div class="product-image">
+            <img src="https://market.rukavychka.ua/image/catalog/products/0307020464/0307020464.jpg" alt="Булочка з маком">
         </div>
-        <div class="nav-container">
-            <nav>
-                <ul class="nav-bar">
-                 <li class="nav-item"><a href="" class="nav-link">Випічка</a></li>
-                 <li class="nav-item"><a href="" class="nav-link">Доставка</a></li>
-                 <li class="nav-item"><a href="" class="nav-link">Оплата</a></li>   
-                </ul>
-            </nav>
+        <div class="product-info">
+            <h3 class="product-title">Булочка з маком</h3>
+            <p class="product-price">25 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(1,'Булочка з маком',25,'img/image.png')">
+            🛒 В кошик
+            </button>
         </div>
-                <div class="cart"><a href="cart.html">
-                <img src="shopping-basket-icon-isolated-illustration_18591-82230.avif">
-                <span class="card-count"></span>
-            </a>
-        </div>
-    </header>
-    <div class="container">
-        <h2>Товари</h2>
-        <div class="catalog">
-        <div class="product">   
-                <h3>Товар 1</h3>
-                <p>Опис</p>
-                <button class="CartProdMore"onclick="addCart(1,'title',2500,'src/image.png')">
-                    Купити
-                </button>
-
-
-        </div> 
-        </div>
-
-
-
-
     </div>
-    <main>
-<h1>Ваш кошик</h1>
-<a href="index.html"назад
-    </main>
-    <footer>
-        <ul>
-            <li> <p>розробник:</p> </li>
-            <li> <p>Адреса: Данила Нечая 23</p> </li>
-            <li> <p></p> </li>
-            <li> <p></p> </li>
+
+    <!-- Товар 2 -->
+    <div class="product">
+        <div class="product-image">
+            <img src="img/mouse.png" alt="Мишка">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Мишка</h3>
+            <p class="product-price">800 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'Мишка',800,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+
+    <!-- Товар 3 -->
+    <div class="product">
+        <div class="product-image">
+            <img src="img/mouse.png" alt="Мишка">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Мишка</h3>
+            <p class="product-price">800 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(3,'Мишка',800,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<div class="slider">
+
+<button class="prev" onclick="prev()">⬅</button>
+
+<div class="slides">
+
+<div class="slide active">
+<img src="круасан.png" class="slide-img">
+<h3>Круасан</h3>
+<p>Свіжий французький круасан</p>
+<button>Купити</button>
+</div>
+
+<div class="slide">
+<img src="hleb.webp" class="slide-img">
+<h3>Хліб</h3>
+<p>Щойно з печі і завжди свіжий</p>
+<button>Купити</button>
+</div>
+
+<div class="slide">
+<img src="булочка.png" class="slide-img">
+<h3>Булочка з корицею</h3>
+<p>Ароматна булочка</p>
+<button>Купити</button>
+</div>
+
+<div class="slide">
+<img src="honey-pancakes_1_largeThumb.зтп.jpg" class="slide-img">
+<h3>Млинці</h3>
+<p>Маслянисті і найсмачніші млинці</p>
+<button>Купити</button>
+</div>
+
+<div class="slide">
+<img src="hot-dog-3.png" class="slide-img">
+<h3>Хот-дог</h3>
+<p>Хот-дог на ваш смак</p>
+<button>Купити</button>
+</div>
+
+<div class="slide">
+<img src="ригалик.png" class="slide-img">
+<h3>Рогалик</h3>
+<p>З начинкою на вибір</p>
+<button>Купити</button>
+</div>
+
+</div>
+
+<button class="next" onclick="next()">➡</button>
+
+</div>
+
+</div>
 
 
-        </ul>
-    </footer>
-    <script src="anime.js"></script>
-    <script src="cart.js"></script>
+<section class="reviews">
+
+<h2>Відгуки клієнтів</h2>
+
+<div class="review-grid">
+
+<div class="review">
+<p>⭐️⭐️⭐️⭐️⭐️</p>
+<p>Найкращі круасани у місті!</p>
+</div>
+
+<div class="review">
+<p>⭐️⭐️⭐️⭐️⭐️</p>
+<p>Дуже смачний хліб!</p>
+</div>
+
+<div class="review">
+<p>⭐️⭐️⭐️⭐️⭐️</p>
+<p>Замовляю тут постійно!</p>
+</div>
+
+</div>
+
+</section>
+
+
+<div class="pro-nas">
+
+<h1>Про нас</h1>
+
+<p>🍞 Вітання з нашої булочної!</p>
+
+<p>
+Ласкаво просимо до нашої затишної булочної,
+де кожен день випікаємо свіжі та ароматні вироби.
+</p>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>Контакти</h3>
+<p>Адреса: Данила Нечая 23</p>
+<p>Телефон: 0123456789</p>
+</div>
+
+<div>
+<h3>Інформація</h3>
+<p>Доставка</p>
+<p>Оплата</p>
+<p>Політика конфіденційності</p>
+</div>
+
+<div>
+<h3>Розробник</h3>
+<p>Яременко Максим</p>
+</div>
+
+</div>
+
+</footer>
+
+<script src="anime.js"></script>
+<script src="cart.js"></script>
+
 </body>
-
 </html>
