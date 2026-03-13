@@ -18,13 +18,12 @@
 <div class="nav-container">
 <nav>
 <ul class="nav-bar">
-<li class="nav-item"><a href="#" class="nav-link">Випічка</a></li>
-<li class="nav-item"><a href="#" class="nav-link">Доставка</a></li>
-<li class="nav-item"><a href="#" class="nav-link">Оплата</a></li>
+<li class="nav-item"><a href="#catalog" class="nav-link">Випічка</a></li>
+<li class="nav-item"><a href="#pro-nas" class="nav-link">Про нас</a></li>
+<li class="nav-item"><a href="cart.html" class="nav-link">Оплата</a></li>
 </ul>
 </nav>
 </div>
-
 <div class="cart">
 <a href="cart.html">
 <img src="cart-removebg-preview.png">
@@ -37,29 +36,23 @@
 
 <main>
 
-<section class="baner">
+<section class="baner" id="baner">
+  <div class="text">
+    <h1>Свіжа випічка щодня</h1>
+    <h2>Тільки з печі</h2>
+    <p>
+      Ми готуємо круасани, булочки та хліб щодня 
+      використовуючи тільки свіжі інгредієнти.
+    </p>
+    <div class="controls">
+      <button>Замовити</button>
+      <button class="secondary">Меню</button>
+    </div>
+  </div>
 
-<div class="text">
-
-<h1>Свіжа випічка щодня</h1>
-<h2>Тільки з печі</h2>
-
-<p>
-Ми готуємо круасани, булочки та хліб щодня 
-використовуючи тільки свіжі інгредієнти.
-</p>
-
-<div class="controls">
-<button>Замовити</button>
-<button class="secondary">Меню</button>
-</div>
-
-</div>
-
-<div class="image">
-<img src="hachapuri.png">
-</div>
-
+  <div class="image">
+    <img src="sinabon.png.png" id="baner-img">
+  </div>
 </section>
 
 
@@ -88,8 +81,12 @@
 
 </section>
 
+<div class="search-bar">
+  <input type="text" id="search-input" placeholder="Пошук товару...">
+</div>
 
-<div class="container">
+
+<div class="container" id="catalog">
 
 <h2>Наші товари</h2>
 
@@ -113,13 +110,13 @@
     <!-- Товар 2 -->
     <div class="product">
         <div class="product-image">
-            <img src="img/mouse.png" alt="Мишка">
+            <img src="mafin.png" alt="Мафін">
         </div>
         <div class="product-info">
-            <h3 class="product-title">Мишка</h3>
-            <p class="product-price">800 грн</p>
+            <h3 class="product-title">Мафін</h3>
+            <p class="product-price">60 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'Мишка',800,'img/mouse.png')">
+            onclick="addToCart(2,'мафін',60,'img/mouse.png')">
             🛒 В кошик
             </button>
         </div>
@@ -128,13 +125,130 @@
     <!-- Товар 3 -->
     <div class="product">
         <div class="product-image">
-            <img src="img/mouse.png" alt="Мишка">
+            <img src="ponchik.png" alt="Пончик">
         </div>
         <div class="product-info">
-            <h3 class="product-title">Мишка</h3>
-            <p class="product-price">800 грн</p>
+            <h3 class="product-title">Пончик</h3>
+            <p class="product-price">100 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(3,'Мишка',800,'img/mouse.png')">
+            onclick="addToCart(3,'Пончик',100,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+      <div class="product">
+        <div class="product-image">
+            <img src="images.png" alt="Шоколадний трюфель">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Шоколадний трюфель</h3>
+            <p class="product-price">20 грн за шт</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'Шоколадний трюфель',20,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+      <div class="product">
+        <div class="product-image">
+            <img src="paska.png" alt="Паска">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Паска</h3>
+            <p class="product-price">220 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'Паска',220,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+      <div class="product">
+        <div class="product-image">
+            <img src="goroh.png" alt="Горішок зі згущенкою">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">Горішок зі згущенкою</h3>
+            <p class="product-price">12 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'Горішок зі згущенкою',12,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+      <div class="product">
+        <div class="product-image">
+            <img src="set.png" alt="сет круасан+кава">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">сет круасан+кава</h3>
+            <p class="product-price">250 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'сет круасан+кава',250,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+      <div class="product">
+        <div class="product-image">
+            <img src="hotcofee.png" alt="лате">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">лате</h3>
+            <p class="product-price">85 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'лате',85,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+      <div class="product">
+        <div class="product-image">
+            <img src="kakao.png" alt="какао">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">какао</h3>
+            <p class="product-price">70 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'какао',70,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+      <div class="product">
+        <div class="product-image">
+            <img src="sik.png" alt="сік(на вибір)">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">сік(на вибір)</h3>
+            <p class="product-price">40 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'сік(на вибір)',40,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+      <div class="product">
+        <div class="product-image">
+            <img src="milkshake.png" alt="молочний коктель">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">молочний коктель</h3>
+            <p class="product-price">140 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'молочний коктель',140,'img/mouse.png')">
+            🛒 В кошик
+            </button>
+        </div>
+    </div>
+      <div class="product">
+        <div class="product-image">
+            <img src="matcha.png" alt="матча">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">матча</h3>
+            <p class="product-price">100 грн</p>
+            <button class="add-cart-btn"
+            onclick="addToCart(2,'матча',100,'img/mouse.png')">
             🛒 В кошик
             </button>
         </div>
@@ -147,47 +261,72 @@
 <button class="prev" onclick="prev()">⬅</button>
 
 <div class="slides">
+<h1>Завжди актуальні</h1>
 
 <div class="slide active">
 <img src="круасан.png" class="slide-img">
 <h3>Круасан</h3>
 <p>Свіжий французький круасан</p>
-<button>Купити</button>
+<p>80 грн</p>
+<button class="add-cart-btn"
+            onclick="addToCart(3,'Круасан',80,'img/mouse.png')">
+            🛒 В кошик
+            </button>
 </div>
 
 <div class="slide">
 <img src="hleb.webp" class="slide-img">
 <h3>Хліб</h3>
 <p>Щойно з печі і завжди свіжий</p>
-<button>Купити</button>
+<p>40 грн</p>
+<button class="add-cart-btn"
+            onclick="addToCart(3,'хліб',40,'img/mouse.png')">
+            🛒 В кошик
+            </button>
 </div>
 
 <div class="slide">
 <img src="булочка.png" class="slide-img">
 <h3>Булочка з корицею</h3>
 <p>Ароматна булочка</p>
-<button>Купити</button>
+<p>45 грн</p>
+<button class="add-cart-btn"
+            onclick="addToCart(3,'булочка з корицею',45,'img/mouse.png')">
+            🛒 В кошик
+            </button>
 </div>
 
 <div class="slide">
 <img src="honey-pancakes_1_largeThumb.зтп.jpg" class="slide-img">
 <h3>Млинці</h3>
 <p>Маслянисті і найсмачніші млинці</p>
-<button>Купити</button>
+<p>120 грн</p>
+<button class="add-cart-btn"
+            onclick="addToCart(3,'млинці',120,'img/mouse.png')">
+            🛒 В кошик
+            </button>
 </div>
 
 <div class="slide">
 <img src="hot-dog-3.png" class="slide-img">
 <h3>Хот-дог</h3>
 <p>Хот-дог на ваш смак</p>
-<button>Купити</button>
+<p>100 грн</p>
+<button class="add-cart-btn"
+            onclick="addToCart(3,'Хот-дог',100,'img/mouse.png')">
+            🛒 В кошик
+            </button>
 </div>
 
 <div class="slide">
 <img src="ригалик.png" class="slide-img">
 <h3>Рогалик</h3>
 <p>З начинкою на вибір</p>
-<button>Купити</button>
+<p>90 грн</p>
+<button class="add-cart-btn"
+            onclick="addToCart(3,'Рогалик',90,'img/mouse.png')">
+            🛒 В кошик
+            </button>
 </div>
 
 </div>
@@ -225,19 +364,23 @@
 </section>
 
 
-<div class="pro-nas">
+<div class="pro-nas" id="pro-nas">
 
-<h1>Про нас</h1>
+   <h1>Про нас</h1>
 
-<p>🍞 Вітання з нашої булочної!</p>
+    <p>🍞 Вітання з нашої булочної!</p>
 
-<p>
-Ласкаво просимо до нашої затишної булочної,
-де кожен день випікаємо свіжі та ароматні вироби.
-</p>
+    <p>
+    Ласкаво просимо до нашої затишної булочної, де щодня випікаємо свіжі та ароматні вироби. 
+    Ми використовуємо лише натуральні інгредієнти та піклуємося про кожен шматочок, щоб дарувати радість нашим клієнтам.
+    </p>
+
+    <p>
+    Завітайте до нас або скористайтеся доставкою — насолоджуйтесь свіжою випічкою, яка дарує тепло та гарний настрій кожного дня.
+    </p>
 
 </div>
-
+<button id="backToTop" title="Назад вгору">⬆️</button>
 </main>
 
 
@@ -269,6 +412,8 @@
 
 <script src="anime.js"></script>
 <script src="cart.js"></script>
+<script src="js/cart.js"></script>
+
 
 </body>
 </html>

@@ -1,89 +1,234 @@
-body{
-    font-family: Arial, sans-serif;
-    background: #fff8f0;
-    margin:0;
-    padding:0;
-    text-align:center;
+body{ font-family: Arial, sans-serif; background: #fff8f0; margin:0; padding:0; text-align:center; } header{ display:flex; justify-content: space-between; align-items:center; padding:10px 20px; background:#f4c27f; color:#fff; } .nav-bar{ list-style:none; display:flex; gap:20px; padding:0; } .nav-bar a{ text-decoration:none; color:white; font-weight:bold; } .cart-items{ margin:20px auto; width:90%; max-width:600px; } .cart-item{ display:flex; align-items:center; justify-content:space-between; border:1px solid #ccc; padding:10px; margin-bottom:10px; border-radius:10px; background:#fff3e0; } .cart-item img{ width:80px; height:80px; object-fit:cover; border-radius:5px; } .cart-item-details{ flex:1; margin-left:10px; text-align:left; } .cart-item button{ padding:5px 10px; background:#e76f51; color:white; border:none; border-radius:5px; cursor:pointer; } .cart-item button:hover{ background:#f4a261; } .total{ margin-top:20px; } #checkout-btn{ padding:10px 20px; background:#f4a261; border:none; color:white; border-radius:5px; cursor:pointer; } #checkout-btn:hover{ background:#e76f51; }
+
+/* логотип */
+.header_img{
+height:70px;
 }
 
-header{
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    padding:10px 20px;
-    background:#f4c27f;
-    color:#fff;
+/* заголовок */
+h1{
+margin-top:25px;
+color:#333;
+font-size:36px;
 }
 
-.nav-bar{
-    list-style:none;
-    display:flex;
-    gap:20px;
-    padding:0;
+/* кнопка назад */
+.back-btn{
+display:inline-block;
+margin:15px;
+padding:10px 20px;
+background:#f4a261;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
 }
 
-.nav-bar a{
-    text-decoration:none;
-    color:white;
-    font-weight:bold;
+.back-btn:hover{
+background:#e76f51;
+transform:scale(1.05);
 }
 
-.cart-items{
-    margin:20px auto;
-    width:90%;
-    max-width:600px;
-}
-
+/* карточка товара красивее */
 .cart-item{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    border:1px solid #ccc;
-    padding:10px;
-    margin-bottom:10px;
-    border-radius:10px;
-    background:#fff3e0;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border:none;
+padding:15px;
+margin-bottom:15px;
+border-radius:12px;
+background:#fff3e0;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
+.cart-item:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* изображение товара */
 .cart-item img{
-    width:80px;
-    height:80px;
-    object-fit:cover;
-    border-radius:5px;
+width:90px;
+height:90px;
+object-fit:cover;
+border-radius:10px;
 }
 
-.cart-item-details{
-    flex:1;
-    margin-left:10px;
-    text-align:left;
-}
-
+/* кнопка удаления */
 .cart-item button{
-    padding:5px 10px;
-    background:#e76f51;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
+padding:7px 15px;
+background:#e76f51;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
 }
 
 .cart-item button:hover{
-    background:#f4a261;
+background:#d64a2f;
+transform:scale(1.05);
 }
 
+/* сумма */
 .total{
-    margin-top:20px;
+margin-top:25px;
+font-size:28px;
+font-weight:bold;
+color:#333;
 }
 
+/* кнопка оформления */
 #checkout-btn{
-    padding:10px 20px;
-    background:#f4a261;
-    border:none;
-    color:white;
-    border-radius:5px;
-    cursor:pointer;
+margin-top:20px;
+padding:14px 30px;
+font-size:18px;
+background:#2a9d8f;
+border:none;
+color:white;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
 }
 
 #checkout-btn:hover{
-    background:#e76f51;
+background:#21867a;
+transform:scale(1.05);
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+.back-btn-container{
+    text-align: left; /* можна змінити на center, якщо хочеш по центру */
+    margin: 20px 0;
+}
+
+.back-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f4c27f;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    background: orangered;
+    transform: scale(1.05);
+}
+.checkout-container{
+    text-align:center;
+    margin: 20px 0;
+}
+
+#checkout-btn{
+    padding:12px 25px;
+    background: orangered;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+#checkout-btn:hover{
+    background:red;
+    transform: scale(1.05);
+}
+
+/* Модальне вікно */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+.modal-content input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background: orangered;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal-content button:hover {
+  background: red;
+  transform: scale(1.05);
+}
+.promo-code {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#promo-input {
+    padding: 8px 12px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#apply-promo {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: orangered;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#apply-promo:hover {
+    background: red;
+}
+
+#promo-message {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
 }
