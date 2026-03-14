@@ -217,3 +217,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // Перший рендер кошика
     renderCart();
 });
+
+function toggleTheme(){
+
+    document.body.classList.toggle("dark-theme");
+
+    if(document.body.classList.contains("dark-theme")){
+        localStorage.setItem("theme","dark");
+    }else{
+        localStorage.setItem("theme","light");
+    }
+
+}
+
+/* перевірка теми при завантаженні сторінки */
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-theme");
+}
