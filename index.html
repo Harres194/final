@@ -14,6 +14,17 @@
 <div class="logo">
 <img src="завантаження.png" class="header_img">
 </div>
+<button class="theme-toggle" onclick="toggleTheme()">
+🌙 / ☀️
+</button>
+<div class="header-icons">
+
+<a href="favorites.html" class="favorites-btn">
+❤️
+<span class="favorites-count">0</span>
+</a>
+
+</div>
 
 <div class="nav-container">
 <nav>
@@ -93,20 +104,34 @@
 <div class="catalog">
 
     <!-- Товар 1 -->
-    <div class="product">
-        <div class="product-image">
-            <img src="https://market.rukavychka.ua/image/catalog/products/0307020464/0307020464.jpg" alt="Булочка з маком">
-        </div>
-        <div class="product-info">
-            <h3 class="product-title">Булочка з маком</h3>
-            <p class="product-price">25 грн</p>
-            <button class="add-cart-btn"
-            onclick="addToCart(1,'Булочка з маком',25,'img/image.png')">
-            🛒 В кошик
-            </button>
-            
-        </div>
-    </div>
+   <div class="product">
+
+<div class="product-image">
+<img src="https://market.rukavychka.ua/image/catalog/products/0307020464/0307020464.jpg" alt="">
+</div>
+
+<div class="product-info">
+<h3 class="product-title">Булочка з маком</h3>
+
+<p class="product-price">25 грн</p>
+
+<div class="product-buttons">
+
+<button class="add-cart-btn"
+onclick="addToCart(1,'Булочка з маком',25,'img/image.png')">
+🛒 В кошик
+</button>
+
+<button class="favorite-product"
+onclick="addToFavorites(1,'Булочка з маком',25,'https://market.rukavychka.ua/image/catalog/products/0307020464/0307020464.jpg')">
+❤️
+</button>
+
+</div>
+
+</div>
+
+</div>
 
     <!-- Товар 2 -->
     <div class="product">
@@ -117,9 +142,13 @@
             <h3 class="product-title">Мафін</h3>
             <p class="product-price">60 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'мафін',60,'img/mouse.png')">
+            onclick="addToCart(2,'мафін',60,'img/mafin.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'Мафін',60,'mafin.png')">
+❤️
+</button>
         </div>
     </div>
 
@@ -132,9 +161,13 @@
             <h3 class="product-title">Пончик</h3>
             <p class="product-price">100 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(3,'Пончик',100,'img/mouse.png')">
+            onclick="addToCart(3,'Пончик',100,'img/ponchik.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'пончик',100,'ponchik.png')">
+❤️
+</button>
         </div>
     </div>
       <div class="product">
@@ -145,9 +178,13 @@
             <h3 class="product-title">Шоколадний трюфель</h3>
             <p class="product-price">20 грн за шт</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'Шоколадний трюфель',20,'img/mouse.png')">
+            onclick="addToCart(2,'Шоколадний трюфель',20,'img/images.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'Шоколадний трюфель',20,'images.png')">
+❤️
+</button>
         </div>
     </div>
       <div class="product">
@@ -158,9 +195,13 @@
             <h3 class="product-title">Паска</h3>
             <p class="product-price">220 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'Паска',220,'img/mouse.png')">
+            onclick="addToCart(2,'Паска',220,'img/paska.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'Паска',220,'paska.png')">
+❤️
+</button>
         </div>
     </div>
       <div class="product">
@@ -171,9 +212,13 @@
             <h3 class="product-title">Горішок зі згущенкою</h3>
             <p class="product-price">12 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'Горішок зі згущенкою',12,'img/mouse.png')">
+            onclick="addToCart(2,'Горішок зі згущенкою',12,'img/goroh.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'Горішок із згущенкою',12,'goroh.png')">
+❤️
+</button>
         </div>
     </div>
       <div class="product">
@@ -184,9 +229,13 @@
             <h3 class="product-title">сет круасан+кава</h3>
             <p class="product-price">250 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'сет круасан+кава',250,'img/mouse.png')">
+            onclick="addToCart(2,'сет круасан+кава',250,'img/set.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'сет круасан+кава',250,'set.png')">
+❤️
+</button>
         </div>
     </div>
       <div class="product">
@@ -197,9 +246,13 @@
             <h3 class="product-title">лате</h3>
             <p class="product-price">85 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'лате',85,'img/mouse.png')">
+            onclick="addToCart(2,'лате',85,'img/hotcofee.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'лате',85,'hotcofee.png')">
+❤️
+</button>
         </div>
     </div>
       <div class="product">
@@ -210,9 +263,13 @@
             <h3 class="product-title">какао</h3>
             <p class="product-price">70 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'какао',70,'img/mouse.png')">
+            onclick="addToCart(2,'какао',70,'img/kakao.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'какао',70,'kakao.png')">
+❤️
+</button>
         </div>
     </div>
       <div class="product">
@@ -223,9 +280,13 @@
             <h3 class="product-title">сік(на вибір)</h3>
             <p class="product-price">40 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'сік(на вибір)',40,'img/mouse.png')">
+            onclick="addToCart(2,'сік(на вибір)',40,'img/sik.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'сік',40,'sik.png')">
+❤️
+</button>
         </div>
     </div>
       <div class="product">
@@ -236,9 +297,13 @@
             <h3 class="product-title">молочний коктель</h3>
             <p class="product-price">140 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'молочний коктель',140,'img/mouse.png')">
+            onclick="addToCart(2,'молочний коктель',140,'img/milkshake.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'молочний коктель',140,'milkshake.png')">
+❤️
+</button>
         </div>
     </div>
       <div class="product">
@@ -249,9 +314,13 @@
             <h3 class="product-title">матча</h3>
             <p class="product-price">100 грн</p>
             <button class="add-cart-btn"
-            onclick="addToCart(2,'матча',100,'img/mouse.png')">
+            onclick="addToCart(2,'матча',100,'img/matcha.png')">
             🛒 В кошик
             </button>
+<button class="favorite-product"
+onclick="addToFavorites(1,'матча',100,'matcha.png')">
+❤️
+</button>
         </div>
     </div>
 
@@ -339,6 +408,7 @@
 </div>
 
 
+
 <section class="reviews">
 
 <h2>Відгуки клієнтів</h2>
@@ -414,6 +484,7 @@
 <script src="anime.js"></script>
 <script src="cart.js"></script>
 <script src="js/cart.js"></script>
+<script src="favorites.js"></script>
 
 
 </body>

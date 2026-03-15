@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Улюблені товари</title>
+<link rel="stylesheet" href="favorites.css">
+</head>
+
+<body>
+
+<header class="favorites-header">
+
+<h1>❤️ Улюблені товари</h1>
+
+<a href="index.html" class="back-button">
+⬅ Повернутись в магазин
+</a>
+
+</header>
+
+<main>
+
+<div id="favorites-list" class="favorites-grid"></div>
+
+<p id="empty-message" class="empty-text">
+У вас ще немає улюблених товарів 🥐
+</p>
+
+</main>
+
+
+<script src="favorites.js"></script>
+
+<script>
+
+let favorites = getFavorites()
+
+let container = document.getElementById("favorites-list")
+let empty = document.getElementById("empty-message")
+
+if(favorites.length === 0){
+empty.style.display = "block"
+}
+
+favorites.forEach(item => {
+
+container.innerHTML += `
+
+<div class="favorite-card">
+
+<img src="${item.img}" class="favorite-img">
+
+<h3>${item.name}</h3>
+
+<p class="favorite-price">${item.price} грн</p>
+
+<div class="favorite-buttons">
+
+<button onclick="addToCart(${item.id},'${item.name}',${item.price},'${item.img}')">
+🛒 В кошик
+</button>
+
+<button class="remove-btn" onclick="removeFavorite(${item.id})">
+❌ Видалити
+</button>
+
+</div>
+
+</div>
+
+`
+
+})
+
+</script>
+
+</body>
+</html>
